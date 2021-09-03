@@ -65,7 +65,7 @@ const order = {
             const token = localStorage.getItem('token')
 
             Api.defaults.headers.common['Authorization'] = "Bearer " +token
-            Api.get(`order/${snap_token}`)
+            Api.get('order/${snap_token}')
             .then(response => {
                 
                 //commit mutation DETAIL_ORDER
